@@ -1,0 +1,108 @@
+<!-- Controlando informações de um formulário -->
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Nome da página no navegador -->
+
+<head>
+    <title>Incrição</title>
+</head>
+
+<body>
+    <!-- Bloco de informações -->
+    <div>
+        <!-- Linhas de informações -->
+        <hr />
+        <h3>Curso de Engenharia de Software - UniEVANGÉLICA </h3>
+        <h3>Disciplina de Programação Web</h3>
+        <h3>Dev: Guilherme Gomes de Almeida</h3>
+        <h3>DATA: 07/03/2023</h3>
+        <hr />
+    </div>
+    <div>
+        <!-- Criação do formulário -->
+        <form method="post">
+            <!-- Enviando informações com diferentes tipo de input -->
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <br>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="idade">Sua idade: </label>
+            <input type="number" id="idade" name="idade" required>
+            <br>
+            <br>
+            <label for="especie">Especie do peixe </label>
+            <input type="text" id="especie" name="especie" required>
+            <br>
+            <br>
+            <label for="peso-peixe">Peso do peixe: </label>
+            <input type="number" id="peso-peixe" name="peso-peixe" required>
+            <br>
+            <br>
+            <label for="categoria">Categoria: </label>
+            <br>
+            <input type="radio" id="sexo-m" name="sexo" value="Masculino">
+            <label for="sexo-m">Masculino</label><br>
+            <input type="radio" id="sexo-f" name="sexo" value="Feminino">
+            <label for="sexo-f">Feminio</label>
+            <br>
+            <br>
+            <label for="tipo-pesca">Tipo de pesca: </label>
+            <br>
+            <input type="radio" id="comum" name="comum" value="comum">
+            <label for="comum">Pesca comum</label><br>
+            <input type="radio" id="solta" name="solta" value="solta">
+            <label for="solta">Pesca esportiva</label>
+            <br>
+            <br>
+            <label for="dt-pesca">Data da pescaria:</label>
+            <br>
+            <input type="date" id="dt-pesca" name="dt-pesca">
+            <br>
+            <br>
+            <label for="estado">Estado</label>
+            <!-- Criando uma seleção com suas opções -->
+            <select id="estado" name="estado">
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <br>
+            <br>
+            <!-- Criando botões de reset e de envio -->
+            <input type="reset" value="Apagar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
